@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <script
+      src="https://kit.fontawesome.com/1d41b3ab2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+
+    <script type="module" defer src="app.js"></script>
+  </head>
+  <body
+    class="w-screen min-h-screen bg-blackFiap flex flex-col justify-center items-center"
+  >
+    <div
+      class="modal bg-gray-100 absolute z-[9999] w-[90vw] h-[70vh] overflow-y-scroll rounded-lg border border-solid border-pinkFiap hidden"
+    ></div>
+    <div
+      class="modal__cover absolute w-screen h-screen bg-[rgba(0,0,0,0.74)] z-[9998] hidden"
+    ></div>
+    <div class="swiper w-[85%] h-screen">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide flex flex-col justify-center items-center">
+          <header class="swiper__header">
+            <div class="flex flex-col justify-center items-center gap-8">
+              <div class="flex flex-col justify-center items-center">
+                <img src="src/assets/next.jpg" class="drop-shadow-xl" alt="" />
+                <h2 class="font-oxanium text-sm text-gray-400">
+                  FEEL THE FUTURE
+                </h2>
+              </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center gap-2">
+              <h2 class="font-oxanium text-gray-100 text-2xl">
+                Enterprise Challenge
+              </h2>
+              <h2 class="font-poppins text-gray-100 text-lg">
+                Projeto MentalAid
+              </h2>
+              <img src="src/assets/logo300.png" alt="" class="py-3 w-[90%]" />
+            </div>
+            <button
+              class="slide__button absolute bottom-[10%] flex flex-row justify-center items-center bg-yellowFiap p-4 gap-3 rounded-lg shadow-lg"
+            >
+              <i
+                class="font-oxanium text-pinkFiap font-bold underline underline-offset-4 drop-shadow-md text-lg decoration-2"
+                >Feel the Change </i
+              ><i
+                class="fa-solid fa-heart-pulse text-pinkFiap drop-shadow-lg text-2xl"
+              ></i>
+            </button>
+          </header>
+        </div>
+        <div
+          class="swiper-slide flex flex-col justify-center items-center text-red-500"
+        >
+          <header class="swiper__header" style="padding-top: 3.5rem">
+            <div class="flex flex-col justify-center items-center gap-6">
+              <h4 class="font-oxanium text-pinkFiap text-2xl text-center">
+                Transtorno do Espectro Autista
+              </h4>
+              <div class="flex flex-col justify-center items-start gap-3">
+                <li class="font-poppins text-gray-100 text-sm list-disc">
+                  Restrição interna para a compreensão de abstrações.
+                </li>
+                <li class="font-poppins text-gray-100 text-sm list-disc">
+                  Dificuldade em compreender emoções
+                </li>
+                <img
+                  src="src/assets/expression-abstrat.png"
+                  alt=""
+                  class="self-center w-[35%]"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-6">
+              <h4 class="font-oxanium text-pinkFiap text-2xl text-center">
+                Objetivos
+              </h4>
+              <li class="font-poppins text-gray-100 text-sm list-disc">
+                Explorar emoções básicas, comuns ao nosso cotidiano, de forma
+                lúdica e interativa
+              </li>
+              <li class="font-poppins text-gray-100 text-sm list-disc">
+                Estimular o reforço de novas conexões cerebrais que estabeleçam
+                as relações entre as expressões faciais e as emoções
+              </li>
+              <li class="font-poppins text-gray-100 text-sm list-disc">
+                Oferecer métricas significativas para o acompanhamento do quadro
+                clínico da criança com TEA.
+              </li>
+            </div>
+            <button
+              class="slide__button flex flex-row justify-center items-center bg-yellowFiap p-4 gap-3 rounded-lg shadow-lg"
+            >
+              <i
+                class="font-oxanium text-pinkFiap font-bold underline underline-offset-4 drop-shadow-md text-lg decoration-2"
+                >Security</i
+              >
+              <i
+                class="fa-solid fa-person-military-pointing text-pinkFiap text-2xl"
+              ></i>
+            </button>
+          </header>
+        </div>
+        <div
+          class="swiper-slide flex flex-col justify-center items-center text-red-500"
+        >
+          <header class="swiper__header" style="padding-top: 3rem">
+            <h3 class="font-oxanium text-pinkFiap text-3xl text-center">
+              Threats and actions
+            </h3>
+            <ul class="flex flex-col justify-center items-start">
+              <li
+                class="list-none font-oxanium text-xl text-pinkFiap self-center py-1"
+              >
+                Authentication & Authorization
+              </li>
+              <li
+                class="list-disc list-inside font-poppins text-sm text-gray-100"
+              >
+                Json Web Token para autenticação
+              </li>
+              <li
+                class="list-disc list-inside font-poppins text-sm text-gray-100"
+              >
+                User roles bem definidas para autorização
+              </li>
+            </ul>
+            <ul class="flex flex-col justify-center items-start">
+              <li
+                class="list-none font-oxanium text-xl text-pinkFiap self-center py-1"
+              >
+                Broken Authentication
+              </li>
+              <li
+                class="list-disc list-inside font-poppins text-sm text-gray-100"
+              >
+                Senhas criptografadas com SALT e Hash (bcrypt.js)
+              </li>
+              <li
+                class="list-disc list-inside font-poppins text-sm text-gray-100"
+              >
+                Processo de login mais lento com o uso de criptografia
+              </li>
+              <li
+                class="list-disc list-inside font-poppins text-sm text-gray-100"
+              >
+                Limite de 250 requisições a cada 30 minutos (express-rate-limit)
+              </li>
+            </ul>
+
+            <ul class="flex flex-col justify-center items-start">
+              <li
+                class="list-none font-oxanium text-xl text-pinkFiap self-center py-1"
+              >
+                Cross-Site Scripting (XSS)
+              </li>
+              <li
+                class="list-disc list-inside font-poppins text-sm text-gray-100"
+              >
+                JWT armazenado em HTTP Only Cookies
+              </li>
+              <li
+                class="list-disc list-inside font-poppins text-sm text-gray-100"
+              >
+                Sanitização de dados vindos do Client (xss-clean)
+              </li>
+              <li
+                class="list-disc list-inside font-poppins text-sm text-gray-100"
+              >
+                Set especial de HTTP Headers (helmet package)
+              </li>
+            </ul>
+            <ul class="flex flex-col justify-center items-start">
+              <li
+                class="list-none font-oxanium text-xl text-pinkFiap self-center py-1"
+              >
+                NoSQL Query Injection
+              </li>
+              <li
+                class="list-disc list-inside font-poppins text-sm text-gray-100"
+              >
+                Schemas com validação criteriosa (Mongoose)
+              </li>
+              <li
+                class="list-disc list-inside font-poppins text-sm text-gray-100"
+              >
+                Sanitização de dados vindos do Client
+                (express-mongoose-sanitize)
+              </li>
+            </ul>
+            <button
+              class="slide__button flex flex-row justify-center items-center bg-yellowFiap p-4 gap-3 rounded-lg shadow-lg"
+            >
+              <i
+                class="font-oxanium text-pinkFiap font-bold underline underline-offset-4 drop-shadow-md text-lg decoration-2"
+                >Social</i
+              >
+              <i class="fa-solid fa-hashtag text-pinkFiap text-2xl"></i>
+            </button>
+          </header>
+        </div>
+        <div
+          class="swiper-slide flex flex-col justify-center items-center text-red-500"
+        >
+          <header class="swiper__header">
+            <div class="flex flex-col justify-center items-center mb-4 gap-2">
+              <img
+                src="src/assets/me.jpg"
+                alt=""
+                class="rounded-full border-2 border-solid border-pinkFiap w-[65%]"
+              />
+              <h2 class="font-oxanium text-pinkFiap text-3xl">Thiago Matos</h2>
+            </div>
+            <div
+              class="tab__buttons flex flex-row justify-evenly items-center w-full font-oxanium text-2xl text-pinkFiap"
+            >
+              <button
+                class="w-[30%] tab__button swiper__tab-active"
+                data-content="stack"
+              >
+                Stack
+              </button>
+              <button class="w-[30%] tab__button" data-content="projetos">
+                Projetos
+              </button>
+              <button class="w-[30%] tab__button" data-content="social">
+                Social
+              </button>
+            </div>
+            <div
+              class="tab__container flex flex-col justify-center items-center"
+            >
+              <div
+                class="tab__content tab__content-stack flex flex-col justify-center items-center flex-wrap font-poppins text-gray-100 text-2xl gap-3"
+              >
+                <li>JavaScript</li>
+                <li>TailwindCSS</li>
+                <li>Node</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>Mongoose</li>
+              </div>
+            </div>
+            <div
+              class="tab__content tab__content-projetos flex flex-col justify-start items-center gap-3 h-full hidden"
+            >
+              <button class="projects__button h-[18%]" data-project="sunRising">
+                <h3 class="font-sunRising text-2xl text-sunRising">
+                  The Sun Rising
+                </h3>
+                <img src="src/assets/logo.png" alt="" class="w-[19%]" />
+              </button>
+              <button class="projects__button h-[15%]" data-project="farmWise">
+                <h3 class="font-farmWise text-2xl text-farmWise">Farm Wise</h3>
+                <img src="src/assets/farm-wise.png" alt="" class="w-[22%]" />
+              </button>
+              <button class="projects__button h-[15%]" data-project="coliseu">
+                <h3 class="font-coliseu font-bold text-2xl text-coliseu">
+                  O Coliseu
+                </h3>
+                <img src="src/assets/coliseu.png" alt="" class="w-[20%]" />
+              </button>
+              <button class="projects__button h-[15%]" data-project="asteroids">
+                <h3 class="font-asteroids font-bold text-2xl text-gray-700">
+                  Asteroids
+                </h3>
+                <img src="src/assets/asteroids.png" alt="" class="w-[20%]" />
+              </button>
+            </div>
+            <div
+              class="tab__content flex flex-col justify-center items-stretch tab__content-social hidden gap-6"
+            >
+              <div
+                class="flex flex-row justify-items-center items-center gap-1 text-gray-100 font-oxanium text-3xl border border-solid border-yellowFiap p-3"
+              >
+                <a href="https://www.linkedin.com/in/th-tlj/" target="_blank"
+                  >Linkedin <i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+              <div
+                class="flex flex-row justify-evenly items-center text-gray-100 font-oxanium text-3xl border border-solid border-yellowFiap p-3"
+              >
+                <a href="mailto:thiagomatos.tlm@gmail.com">Email </a>
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div
+                class="flex flex-row justify-evenly items-center text-gray-100 font-oxanium text-3xl border border-solid border-yellowFiap p-3 gap-1"
+              >
+                <a href="tel:+55 12996085320">Whatsapp </a>
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+            </div>
+          </header>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </body>
+</html>

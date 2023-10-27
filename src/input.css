@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Oxanium:wght@400;700&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper__header {
+  @apply flex flex-col justify-start pt-20 gap-8 items-center min-h-[100dvh];
+}
+
+.swiper__tab-active {
+  @apply text-yellowFiap -translate-y-2 border border-solid border-yellowFiap;
+}
+
+.projects__button {
+  @apply flex flex-row justify-center items-center gap-3 bg-gray-100 w-[80%] rounded-lg border-2 border-solid border-pinkFiap;
+}
