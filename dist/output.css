@@ -650,6 +650,10 @@ video {
   width: 100vw;
 }
 
+.w-\[75\%\]{
+  width: 75%;
+}
+
 .list-inside{
   list-style-position: inside;
 }
